@@ -1,0 +1,23 @@
+Project Features:
+
+- Game Overview: The game involves guessing 4-letter English words, randomly chosen from a provided list of over 4000 words.
+
+- Data Structure and File I/O: The program will read the list of words from a file and store them in a data structure.
+
+- Game Modes: Two modes are available - play mode and test mode, the latter showing the chosen word for debugging.
+
+- Gameplay Interface: The initial display shows the word as '----', with options to guess the whole word, reveal a letter, give up, or quit the game.
+
+- Letter Guessing: Players can guess letters; correct guesses reveal the letter's position(s) in the word.
+
+- Word Guessing: Players can attempt to guess the entire word.
+
+- Case Insensitivity: The game is case insensitive, treating 'Vino' and 'vino' as equivalent.
+
+- Scoring System: Points are awarded based on letter frequency, with deductions for incorrect guesses or giving up.
+
+- Game Summary Report: Upon quitting, the game provides a summary report of each session, including scores.
+
+- Code Structure: The code is divided into three classes (Guess, Game, StringDatabase) and a main file (words.py).
+
+- Frequency Table: A table of letter frequencies is provided for scoring purposes.

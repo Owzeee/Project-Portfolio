@@ -1,0 +1,13 @@
+Project Features:
+
+- File Listing: Displays all files in the current directory, making it easy to select files for compression or decompression.
+
+- View File Contents: Allows users to read the contents of any text file before and after processing.
+
+- Compress Text Files: Efficiently compresses text by converting words to numbers based on their frequency in English, saving as .ct files.
+
+- Decompress Files: Reverses the compression, accurately restoring the original text from the compressed format.
+
+- Handle Complex Text: Manages punctuation and special characters effectively during compression and decompression.
+
+- Formatting Rules: Applies basic English formatting rules during decompression to ensure readability and presentation of the text.
