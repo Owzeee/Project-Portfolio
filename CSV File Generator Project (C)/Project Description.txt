@@ -1,0 +1,22 @@
+Project Features:
+
+
+- User Interface: The program features a basic menu interface allowing users to choose between building a table or exiting the application.
+
+- Column Selection Menu: It includes a functionality where users can select various columns for their table, customizable in order and number.
+
+- Data Input Specifications: The application requires users to input a list of columns, a row count, and an output file name, all formatted in a specific, non-spaced, column-separated manner.
+
+- Data Output Generation: The program is designed to output a generated table into a CSV file.
+
+- Data Generation Mechanism: It includes mechanisms for generating realistic data for various fields, such as User ID, Names, Country, Phone Numbers, Email Addresses, SINs, and Passwords.
+
+- Handling of Special Characters: The application includes considerations for the handling of special characters, particularly in email addresses and passwords.
+
+- CSV Format and Special Characters: Special attention is given to ensuring that special characters do not disrupt the CSV format, especially regarding the use of commas.
+
+- String Processing with Special Characters: The program is equipped to handle special characters in string manipulation functions effectively.
+
+- Password Field Complexity: It features a password generation mechanism that incorporates a range of characters, including special characters, while excluding commas to maintain CSV integrity.
+
+- Character Encoding Awareness: The application accounts for potential issues with character encoding, especially concerning non-ASCII characters.
