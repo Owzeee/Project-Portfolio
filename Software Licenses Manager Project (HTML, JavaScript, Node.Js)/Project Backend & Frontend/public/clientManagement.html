@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software License Manager</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="header">
+        <img src="css/logo.jpg" alt="LicensePro Manager Logo" class="header-logo">
+        <div class="welcome-message">Welcome, SysAdmin!</div>
+        <form action="/logout" method="post">
+            <button type="submit" class="logout-btn">Logout</button>
+        </form>   
+    </div>
+        <div class="main-content" id="dashboard">
+
+        <h1>Dashboard</h1>
+
+        <div class="navbar">
+            <div class="logo">LicensePro Manager</div>
+            <a href="NewDash.html">Home</a>
+            <a href="serial-generation.html">Serial Number Generation</a>
+        </div>
+        <div class="main-content">
+            <h2>Client Management</h2>
+            <div class="association-controls">
+                <h3>Associate Serial Number to Client</h3>
+                <select id="clientSelect">
+                    <!-- Options for clients will be populated here -->
+                </select>
+                <select id="serialSelect">
+                    <!-- Options for active serial numbers will be populated here -->
+                </select>
+                <button onclick="associateSerialToClient()">Associate</button>
+            </div>
+            <table id="clientTable">
+                <thead>
+                    <tr>
+                        <th>Serial Number</th>
+                        <th>Product Name</th>
+                        <th>Creation Date</th>
+                        <th>Expiration Date</th>
+                        <th>Client ID Assigned to</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Client information will be dynamically inserted here by JavaScript -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="js/manageClient.js"></script>
+</body>
+<footer class="footer">
+    <div class="footer-content">
+        <p>&copy; 2023 License Management System. All rights reserved.</p>
+        <p>Designed by Us</p>
+    </div>
+</footer>
+</html>

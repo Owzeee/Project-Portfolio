@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>LicenseMaster Pro</title>
+
+<link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="Logo.png" alt="Logo" width="40" height="40">
+        </div>
+	<p style = "font-size: 15px; font-family: Arial; margin-right: 480px;"> LicenseMaster Pro </p>
+        <div class="search-container">
+            <input type="text" id="look-up" placeholder="Search...">
+            <button onclick="">Search</button>
+        </div> 
+        <div class="dropdown">
+          <button class="dropbtn">Account Details</button>
+          <div class="dropdown-content">
+              <a href="#" id="user-email">Email: Not logged in</a>
+              <a href="#" id="user-username">Username:</a>
+              <a href="#" id="user-fullname">Full Name:</a>
+              <a href="/Reset.html">Change Password</a>
+          </div>
+      </div>
+        <form action="/logout" method="post">
+          <button type="submit" class="add-product-button">Logout</button>
+        </form>       
+    </header>
+    <div class = "container">
+        <div class="main-title">
+          <p class="font-weight-bold">WELCOME (USER)!</p>
+        </div>
+
+        <h2>DASHBOARD</h2>
+
+        <div class="main-cards">
+
+          <div class="card">
+            <div class="card-inner">
+              <p class="text-primary">NUMBER OF ACTIVE LICENSES</p>              
+            </div>
+            <span class="text-primary font-weight-bold">7</span>
+          </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <p class="text-primary">LICENSE MANAGEMENT</p>
+            </div>
+            <button id="add-license-button">Add New License</button><br>
+            <button id="edit-license-info-button">Edit License Information</button><br>
+            <button id="remove-license-button">Remove a License</button>
+          
+          </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <p class="text-primary">SUBSCRIPTION REVENUE</p>
+            </div>
+            <span class="text-primary font-weight-bold">Monthly CDN$ 27.99</span>
+          </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <p class="text-primary">ALERTS</p>
+              <span class="material-icons-outlined text-red"><b>Licenses expiring this month</b></span>
+            </div>
+            <span class="text-primary font-weight-bold">5</span>
+          </div>
+
+        </div>
+
+        <div class="charts">
+
+          <div class="charts-card">
+            <p class="chart-title">License Utilization</p>
+            <div id="bar-chart"></div>
+          </div>
+
+          <div class="charts-card">
+            <p class="chart-title">License Revenue Analysis</p>
+            <div id="graph"></div>
+          </div>
+
+        </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.3/apexcharts.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+        <!-- End of Dashboard -->
+        
+        <!-- Recent Activities -->
+        <div class="Inner_Container">
+          <div class="software-developer-activity">
+              <h3>Recent Activity</h3>
+              <table class="activity-table">
+                  <thead>
+                      <tr>
+                          <th>Date</th>
+                          <th>Admin</th>
+                          <th>Action</th>
+                      </tr>
+                  </thead>
+                  <tbody id="developer-activity-list">
+                      <!-- Developer activity log entries will be dynamically added here -->
+                  </tbody>
+              </table>
+              <!-- Input elements -->
+              <input type="text" id="developer-action" placeholder="Action">
+              <!-- Button to trigger the addNewDeveloperActivity function -->
+              <button class="add-activity-button" id="add-developer-activity-button"
+                  onclick="addNewDeveloperActivity()">Add Developer Activity</button>
+          </div>
+          <br><br>
+      </div>
+    <div class = "footer">
+				Welcome to LicenseMaster Pro, your trusted solution for managing licenses.<br> 
+				With our user-friendly platform, you can effortlessly keep track of licenses, monitor usage, 
+				and ensure compliance.<br> Explore our powerful features and take control of your software licenses today!<br>
+				<div style="text-align: right;margin-right: 40px;">
+            	LicenseMaster Pro Team<br>@ 2023 LicenseMaster
+       	 </div>
+	</div>
+  <script src="js/softwareProvider.js"></script> 
+</body>
+</html>

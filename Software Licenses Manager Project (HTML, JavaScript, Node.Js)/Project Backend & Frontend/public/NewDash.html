@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software License Manager</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">LicensePro Manager</div>
+        <a href="licenses.html">Homepage</a>
+        <a href="NewDash.html" class="active">Dashboard</a>   
+    </div>
+</div>
+<div class="header">
+    <img src="css/logo.jpg" alt="LicensePro Manager Logo" class="header-logo">
+    <div class="welcome-message">Welcome, SysAdmin!</div>
+    <form action="/logout" method="post">
+        <button type="submit" class="logout-btn">Logout</button>
+    </form>   
+</div>
+    <div class="main-content" id="dashboard">
+        
+        <h1>Dashboard</h1>
+
+        <div class="navbar">
+            <div class="logo">LicensePro Manager</div>
+            <a href="clientManagement.html">Client Management</a>
+            <a href="serial-generation.html">Serial Number Generation</a>
+        </div>
+    
+        <section id="client-management">
+            <h2>Client Management</h2>
+            <table id="clientListTable">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Username</th>
+                        <th>Email</th>
+                        <th>Phone number</th>
+                        <th>Full Name</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Client data will be inserted here -->
+                </tbody>
+            </table>
+            
+        </section>
+    
+
+            <section id="serial-number-generation">
+                <h2>Serial Number Generation</h2>
+                <table id="serialTable">
+                    <thead>
+                        <tr>
+                            <th>Serial Number</th>
+                            <th>Product Name</th>
+                            <th>Creation Date</th>
+                            <th>Expiration Date</th>
+                            <th>Client ID Assigned to</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Serial numbers will be inserted here by the JavaScript -->
+                    </tbody>
+                </table>
+            </section>
+
+    
+        <section id="notifications">
+            <h2>Notifications</h2>
+        
+        </section>
+    
+    
+    <!-- Recent Activities -->
+    <div class="Inner_Container">
+        <div class="software-developer-activity">
+            <h3>Recent Activity</h3>
+            <table class="activity-table">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Admin</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="developer-activity-list">
+                    <!-- Developer activity log entries will be dynamically added here -->
+                </tbody>
+            </table>
+        </div>
+        <br><br>
+    </div>
+
+    </div>
+    <script src="js/viewDash.js"></script>
+</body>
+<footer class="footer">
+    <div class="footer-content">
+        <p>&copy; 2023 License Management System. All rights reserved.</p>
+        <p>Designed by Us</p>
+    </div>
+</footer>
+</html>
+
