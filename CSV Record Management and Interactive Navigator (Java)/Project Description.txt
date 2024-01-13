@@ -1,0 +1,17 @@
+Project Features:
+
+- Input File Reading: Reads book records from CSV files listed in Part1_input_file_names.txt.
+
+- Error Handling: Handles syntax errors (like too many/few fields, unknown genres) and semantic errors (invalid ISBNs, prices, years).
+
+- Validation: Enforces rules for valid prices, years, and ISBNs.
+
+- Output File Categorization: Writes syntactically correct records to genre-based CSV files.
+
+- Custom Exceptions: Implements specific exceptions for different syntax and semantic errors.
+
+- Serialization (Part 2): Converts semantically valid book records into serialized binary files.
+
+- Interactive Navigation (Part 3): Deserializes binary files and allows users to navigate through book records with a menu-driven interface.
+
+- Efficient File Management: Manages file operations and record processing efficiently.
