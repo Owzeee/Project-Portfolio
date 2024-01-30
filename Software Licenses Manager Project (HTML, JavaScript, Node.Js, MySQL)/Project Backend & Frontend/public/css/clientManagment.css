@@ -1,0 +1,309 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    min-height: 100%;
+    margin: 0;
+    padding-bottom: 60px;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+    background-image: url('Background_pic.png');
+    color: #333;
+}
+
+.header {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-logo {
+    height: 50px;
+}
+
+.welcome-message {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.logout-btn {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.logout-btn:hover {
+    background-color: #c0392b;
+}
+
+.navbar {
+    background-color: #2c3e50;
+    width: 250px;
+    position: fixed;
+    top: 70px;
+    left: 0;
+    height: calc(100% - 60px);
+    overflow-y: auto;
+    padding-top: 20px;
+}
+
+.navbar .logo {
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    font-size: 24px;
+}
+
+.navbar a {
+    color: #ddd;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #2c3e50;
+    color: white;
+}
+
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+.client-management {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: #34495e;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.association-controls {
+    margin-bottom: 20px;
+}
+
+.associate-btn {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.associate-btn:hover {
+    background-color: #2980b9;
+}
+
+.footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content p {
+    margin: 5px 0;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .main-content {
+        margin-left: 0;
+    }
+
+    .header-logo {
+        height: 40px;
+    }
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input-group input[type="text"],
+.input-group input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.generate-btn {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.generate-btn:hover {
+    background-color: #2980b9;
+}
+
+.table-section {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-top: 20px;
+}
+
+
+select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: white;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: relative;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+select:after {
+    content: '▼';
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #333;
+}
+
+.association-controls {
+    position: relative;
+}
+
+.association-controls:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.association-controls label,
+.association-controls select {
+    float: left;
+    width: 48%;
+    margin-right: 4%;
+}
+
+.association-controls label:last-child,
+.association-controls select:last-child {
+    margin-right: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .association-controls label,
+    .association-controls select {
+        float: none;
+        width: 100%;
+        margin-right: 0;
+    }
+}
+ 
+.Update-btn {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;}
+    .Update-btn:hover {
+        background-color: #2980b9;
+    }
+.Toogle-btn {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;}
+    .Toogle-btn:hover {
+        background-color: #2980b9;
+    }
+.delete-btn {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;}
+    .delete-btn:hover {
+        background-color: #2980b9;
+    }
+.Dissociate-btn {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;}
+    .Dissociate-btn:hover {
+    background-color: #2980b9;
+    }

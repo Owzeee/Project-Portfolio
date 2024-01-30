@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software License Manager</title>
+    <link rel="stylesheet" href="css/clientManagment.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">LicensePro Manager</div>
+        <a href="NewDash.html">Home</a>
+        <a href="clientManagement.html">Client Management</a>
+    </div>
+    <div class="header">
+        <img src="css/logo.jpg" alt="LicensePro Manager Logo" class="header-logo">
+        <div class="welcome-message">Welcome, SysAdmin!</div>
+        <button type="submit" class="logout-btn">Logout</button>
+    </div>
+    <div class="main-content">
+        <h1>Serial Number Generation</h1>
+        <div class="form-section">
+            <div class="input-group">
+                <label for="productName">Product Name:</label>
+                <input type="text" id="productName" name="productName">
+            </div>
+            <div class="input-group">
+                <label for="expirationDate">Expiration Date:</label>
+                <input type="date" id="expirationDate" name="expirationDate">
+            </div>
+            <button onclick="generateSerialNumber()" class="generate-btn">Generate Serial Number</button>
+        </div>
+        <div class="table-section">
+            <table id="serialTable">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Serial Number</th>
+                        <th>Product Name</th>
+                        <th>Creation Date</th>
+                        <th>Expiration Date</th>
+                        <th>Client ID</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Serial numbers will be inserted here by JavaScript -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2023 License Management System. All rights reserved.</p>
+            <p>Designed & Coded by Omar Zaari</p>
+        </div>
+    </footer>
+    <script src="js/generateSN.js"></script>
+</body>
+</html>

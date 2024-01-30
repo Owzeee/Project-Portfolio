@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software License Manager</title>
+    <link rel="stylesheet" href="css/clientManagment.css">
+</head>
+<body>
+    <div class="header">
+        <img src="css/logo.jpg" alt="LicensePro Manager Logo" class="header-logo">
+        <div class="welcome-message">Welcome, SysAdmin!</div>
+        <button class="logout-btn">Logout</button>
+    </div>
+    <div class="navbar">
+        <div class="logo">LicensePro Manager</div>
+        <a href="NewDash.html">Home</a>
+        <a href="serial-generation.html">Serial Number Generation</a>
+    </div>
+    <div class="main-content">
+        <h1>Dashboard</h1>
+        <section class="client-management">
+            <h2>Client Management</h2>
+            <div class="association-controls">
+                <h3>Associate Serial Number to Client</h3>
+                <select id="clientSelect"></select>
+                <select id="serialSelect"></select>
+                <button class="associate-btn" 
+                onclick="associateSerialToClient()">Associate</button>
+            </div>
+            <table id="clientTable">
+                <thead>
+                    <tr>
+                        <th>Serial Number</th>
+                        <th>Product Name</th>
+                        <th>Creation Date</th>
+                        <th>Expiration Date</th>
+                        <th>Client ID Assigned to</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </section>
+    </div>
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2023 License Management System. All rights reserved.</p>
+            <p>Designed & Coded by Omar Zaari</p>
+        </div>
+    </footer>
+    <script src="js/manageClient.js"></script>
+</body>
+</html>

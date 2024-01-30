@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>License Management System</title>
+    <link rel="stylesheet" href="css/Licenses.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">LicensePro Manager</div>
+    </div>
+
+    <div class="header">
+        <img src="css/logo.jpg" alt="LicensePro Manager Logo" class="header-logo">
+        <div class="welcome-message">Welcome, SysAdmin!</div>
+        <form action="/logout" method="post">
+            <button type="submit" class="logout-btn">Logout</button>
+        </form>   
+    </div>
+
+    <div class="main-content" id="dashboard">
+        <div class = "main-content3">
+            <h1>Welcome to LicenseMaster Pro</h1>
+        </div>
+        <h1>Licenses</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name of Software</th>
+                    <th>Key</th>
+                    <th>Purchase Date</th>
+                    <th>expiry Date</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- License data will be populated here by JavaScript -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="js/licenses.js"></script>
+    <script src="js/dashboard.js"></script>
+    <script src="js/generateSN.js"></script>
+</body>
+<footer class="footer">
+    <div class="footer-content">
+        <p>&copy; 2023 License Management System. All rights reserved.</p>
+        <p>Designed & Coded by Omar Zaari</p>
+    </div>
+</footer>
+</html>

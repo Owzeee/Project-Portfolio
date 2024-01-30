@@ -1,0 +1,60 @@
+body{
+    background: url('logo.jpg');
+    background-size: 25%;
+    background-position-x: -100% 100%;
+    background-position-y: 50%;
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+   
+    
+}
+
+.Forgot{
+    width: 600px;
+    background-color: white;
+    border: 5px solid rgba(0, 0, 0, 0.2);
+    border-radius: 25px;
+    color: black;
+    backdrop-filter: blur(20px);
+    box-shadow: 10px;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+#h1{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.find input{
+    width: 90%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 2pt solid;
+    border-radius: 10px;
+}
+
+.button input{
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 60%;
+}
+
+.button input:hover{
+    background-color: rgb(18, 54, 112);
+}
+
+
+

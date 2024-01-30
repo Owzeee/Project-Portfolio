@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #E3E3E3;
+    font-family: "Arial", sans-serif;
+}
+header {
+    padding: 12px;
+    top: 0;
+    background-color: #0094CF;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.container {
+    min-height: 80vh;
+    margin: 25px;
+    border: 1px;
+}
+.Inner_Container {
+    min-height: 40vh;
+    margin: 0px;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    padding: 12px;
+}
+.search-container {
+    margin-right: 350px;
+}
+input {
+    padding: 6px;
+    width: 200px;
+    border: 1px;
+    border-radius: 4px;
+    font-size: 16px;
+}
+button {
+    font-size: 15px;
+    background-color: #0094CF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+button:hover {
+    background-color: #0077A7;
+}
+.add-product-button {
+    margin-right: 10px; 
+}
+.footer {
+    bottom: 0;
+    left: 0;
+    margin: 30;
+    border: 2px;
+    padding: 21px;
+    background-color: #373737; 
+       text-align: center;
+    color: white;
+}
+
+
+.recent-activity {
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #fff;
+    max-height: 300px;
+    overflow-y: scroll;
+}
+.activity-headers {
+    list-style-type: none;
+    padding: 0;
+    display: flex; 
+    background-color: #0077A7; 
+    text-align: center;
+}
+
+.header-item {
+    flex: 1; 
+    padding: 10px;
+    font-weight: bold; 
+    border-bottom: 2px solid #666; 
+}
+
+.activity-item {
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+}
+
+#activity-list {
+    list-style-type: none;
+    padding: 0;
+}   
+
+.container {
+    min-height: 80vh;
+    margin: 25px;
+    border: 1px;
+}
+
+.activity-item {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+}
+
+.activity-date,
+.activity-admin,
+.activity-action,
+.activity-item,
+.activity-target {
+    flex: 1;
+    text-align: center;
+}
+
+.dev-activity-log {
+    padding: 20px;
+}
+.dev-activity-entry {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: white;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}

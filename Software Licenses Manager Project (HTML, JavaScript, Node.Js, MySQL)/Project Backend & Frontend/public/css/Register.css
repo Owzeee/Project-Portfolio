@@ -1,0 +1,86 @@
+body{
+    background: url('logo.jpg');
+    background-size: 25%;
+    background-position-x: -100% 100%;
+    background-position-y: 50%;
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.register_file{
+    background-color: white;
+    width: 600px;
+    border: 5px solid rgba(0, 0, 0, 0.2);
+    border-radius: 25px;
+    color: black;
+    backdrop-filter: blur(20px);
+    box-shadow: 10px;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+.reset-password-container{
+    background-color: white;
+    width: 600px;
+    border: 5px solid rgba(0, 0, 0, 0.2);
+    border-radius: 25px;
+    color: black;
+    backdrop-filter: blur(20px);
+    box-shadow: 10px;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+
+.title{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+    
+}
+
+.user{
+    margin: 10px 0;
+}
+
+.user input{
+    width: 90%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 2pt solid;
+    border-radius: 10px;
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+.user .form-group {
+    flex: 1;
+    margin: 10px 0;
+ }
+
+.button input{
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    width: 18%;
+    margin-left: 76%;
+    
+}
+
+.button input:hover{
+    background-color: rgb(18, 54, 112);
+}
